@@ -8,7 +8,8 @@ namespace EmpWageComputation
 {
     internal class EmployeeWage
     {
-        const int IS_FULL_TIME = 0, WAGE_PER_HOUR = 20, FULL_TIME_HR = 8;
+        const int IS_FULL_TIME = 0, WAGE_PER_HOUR = 20, FULL_TIME_HR = 8, PART_TIME = 4;
+        int totalEmpWage;
         public void Attendence()
         {
 
@@ -32,6 +33,10 @@ namespace EmpWageComputation
             {
                 int totalEmpWage = WAGE_PER_HOUR * FULL_TIME_HR;
                 Console.WriteLine(totalEmpWage);
+            }
+            if (empCheck == PART_TIME)
+            {
+                totalEmpWage = WAGE_PER_HOUR * PART_TIME;
             }
         }
 
