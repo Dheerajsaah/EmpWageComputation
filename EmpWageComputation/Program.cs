@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Displaying Employee Wage Computation Program");
+            EmployeeWage employeeWage = new EmployeeWage();
+            employeeWage.Attendence();
         }
     }
 }
